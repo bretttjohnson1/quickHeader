@@ -35,7 +35,7 @@ except:
     print ("Outputfilename not valid")
     quit()
 
-reg = re.compile("""^(?!")(?!')(?!])(unsigned|void|char|int|char|long)(((?!main).)*)\)""")
+reg = re.compile("""^(?!")(?!')(?!])(unsigned|void|int|char|long|double|float|short)(((?!main).)*)\)""")
 
 methodlist = []
 for line in inputfile:
